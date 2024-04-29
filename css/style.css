@@ -141,11 +141,11 @@ div.theme-toggle-container {
 }
 
 .visible {
-    animation: fadeInUp 0.8s ease-out forwards;
+    animation: fadeInUp 1s ease-out forwards;
 }
 
 .hidden {
-    animation: fadeOutDown 0.8s ease-out forwards;
+    animation: fadeOutDown 1s ease-out forwards;
 }
 
 .profile-inner, .gallery, .github-inner {
