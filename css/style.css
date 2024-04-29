@@ -194,6 +194,10 @@ div.theme-toggle-container {
     font-size: 1.1em;
 }
 
+.introduce-box li a {
+    color: var(--preset--color--contrast);
+}
+
 .service-list-box {
     height: 300px;
 }
