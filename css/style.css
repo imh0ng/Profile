@@ -207,6 +207,10 @@ div.theme-toggle-container {
     color: var(--preset--color--contrast);
 }
 
+.repository-list-box li a {
+    color: var(--preset--color--contrast);
+}
+
 .github-inner {
     display: flex;
 }
