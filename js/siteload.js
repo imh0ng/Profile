@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('https://api.github.com/users/imh0ng/repos')
     .then(response => response.json())
     .then(data => {
-        const repoList = document.getElementById('repository-list');
+        const repoList = document.getElementById('repository-list-box');
         repoList.innerHTML = '';
         data.forEach(repo => {
             const listItem = document.createElement('li');
