@@ -181,11 +181,11 @@ div.theme-toggle-container {
     align-content: center;
 }
 
-.introduce-box ul {
+.introduce-box ul, .repository-list-box ul {
     list-style: none;
 }
 
-.introduce-box li {
+.introduce-box li, .repository-list-box li {
     font-size: 1.1em;
 }
 
