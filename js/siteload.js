@@ -32,11 +32,15 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('https://api.github.com/users/imh0ng/repos')
     .then(response => response.json())
     .then(data => {
-        const repoList = document.getElementById('repository-list-box');
+        const repoList = document.getElementById('repository-list');
         repoList.innerHTML = '';
         data.forEach(repo => {
             const listItem = document.createElement('li');
-            listItem.textContent = repo.name;
+            const link = document.createElement('a');
+            link.href = repo.html_url;
+            link.textContent = repo.name;
+            link.target = '_blank';
+            listItem.appendChild(link);
             repoList.appendChild(listItem);
         });
     })
