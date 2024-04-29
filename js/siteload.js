@@ -29,4 +29,16 @@ window.addEventListener('load', revealOnScroll);
 
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('theme-toggle').checked = (userTheme == 'dark') ? true : false;
+    fetch('https://api.github.com/users/imh0ng/repos')
+    .then(response => response.json())
+    .then(data => {
+        const repoList = document.getElementById('repository-list');
+        repoList.innerHTML = ''; // 기존 내용을 비웁니다.
+        data.forEach(repo => {
+            const listItem = document.createElement('li');
+            listItem.textContent = repo.name; // 레포지토리 이름을 표시
+            repoList.appendChild(listItem);
+        });
+    })
+    .catch(error => console.error('Error fetching data: ', error));
 });
