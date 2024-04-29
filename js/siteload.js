@@ -28,5 +28,5 @@ window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
 
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('theme-toggle').checked = (userTheme == 'light') ? false : true;
+    document.getElementById('theme-toggle').checked = (userTheme == 'dark') ? true : false;
 });
