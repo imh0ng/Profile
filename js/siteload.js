@@ -10,7 +10,7 @@ function revealOnScroll() {
     sections.forEach(function(section, index) {
         var elementTop = section.getBoundingClientRect().top;
         var elementBottom = section.getBoundingClientRect().bottom;
-        var elementVisible = 20;
+        var elementVisible = 30;
         if (elementTop < windowHeight - (windowHeight * elementVisible / 100) && elementBottom > windowHeight * (elementVisible / 100)) {
             section.classList.add('visible');
             section.classList.remove('hidden');
