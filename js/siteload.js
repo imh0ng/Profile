@@ -32,11 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('https://api.github.com/users/imh0ng/repos')
     .then(response => response.json())
     .then(data => {
-        const repoList = document.getElementById('repository-list');
-        repoList.innerHTML = ''; // 기존 내용을 비웁니다.
+        const repoList = document.getElementById('repository-list-box');
+        repoList.innerHTML = '';
         data.forEach(repo => {
             const listItem = document.createElement('li');
-            listItem.textContent = repo.name; // 레포지토리 이름을 표시
+            listItem.textContent = repo.name;
             repoList.appendChild(listItem);
         });
     })
