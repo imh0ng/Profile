@@ -45,7 +45,7 @@ function togglePlayPause() {
 
 function updatePlayPauseButton() {
     var playPauseBtn = document.getElementById('playPauseBtn');
-    playPauseBtn.textContent = player.getPlayerState() === YT.PlayerState.PLAYING ? '||' : '▶️';
+    playPauseBtn.textContent = player.getPlayerState() === YT.PlayerState.PLAYING ? '❚❚' : '▶';
 }
 
 function initializeProgressBar() {
