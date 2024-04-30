@@ -299,7 +299,7 @@ footer {
 
 @media screen and (max-width: 767px) {
     .profile-inner, .service-list-box, .github-inner, .player-box {
-        width: 100%;
+        width: -webkit-fill-available;;
         margin: 30px 15px;
     }
     .profile-inner, .github-inner {
@@ -309,7 +309,7 @@ footer {
     .profile-img-box {
         margin: auto;
     }
-    .introduce-box, .repository-list-box {
+    .introduce-box, .repository-list-box, #controls {
         width: 100%;
     }
 
