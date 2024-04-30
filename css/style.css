@@ -248,6 +248,10 @@ button#playPauseBtn {
     height: 300px;
 }
 
+.service-list-box p {
+    text-align: center;
+}
+
 .service-list-box ul, .service-list-box p {
     margin: 20px 60px;
 }
@@ -328,5 +332,19 @@ footer {
 
     input#volumeControl {
         width: auto !important;
+    }
+
+    .section-box h2 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .service-list-box ul, .service-list-box p {
+        margin: unset;
+    }
+
+    .service-list-box li a, .service-list-box p {
+        font-size: 1.2em;
+        color: var(--preset--color--contrast);
     }
 }
