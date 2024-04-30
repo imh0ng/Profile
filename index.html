@@ -42,7 +42,19 @@
                     </ul>
                 </div>
             </div>
-
+            <div class="player-box">
+                <div class="right-box">
+                    <h2>Chris Coral feat. AdamAlexander - Young</h2>
+                    <div id="controls">
+                        <button id="playPauseBtn" onclick="togglePlayPause();">▶️</button>
+                        <input type="range" id="progressBar" value="0" style="width: 200px;" oninput="seekVideo();">
+                        <input type="range" id="volumeControl" value="100" style="width: 100px;" oninput="setVolume(this.value);">
+                    </div>
+                </div>
+                <div id="thumbnail-container">
+                    <img id="youtube-thumbnail" src="https://img.youtube.com/vi/-WiK4CZotDg/hqdefault.jpg" alt="YouTube Thumbnail" style="cursor:pointer;" onclick="togglePlayPause();">
+                </div>
+            </div>
         </div>
     </section>
     <section class="section-box">
@@ -88,5 +100,6 @@
         <span id="dot_3"></span>
     </div>
     <script src="js/darkmode.js" id="darkmode"></script>
+    <script src="js/player.js" id="player"></script>
 </body>
 </html>
