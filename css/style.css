@@ -297,3 +297,36 @@ footer {
     background-color: var(--preset--color--primary) !important;
 }
 
+@media screen and (max-width: 767px) {
+    .profile-inner, .service-list-box, .github-inner, .player-box {
+        width: 100%;
+        margin: 30px 15px;
+    }
+    .profile-inner, .github-inner {
+        display: block;
+        text-align: center;
+    }
+    .profile-img-box {
+        margin: auto;
+    }
+    .introduce-box, .repository-list-box {
+        width: 100%;
+    }
+
+    .introduce-box ul, .repository-list-box ul {
+        padding: unset;
+    }
+
+    .player-box {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    input#progressBar {
+        width: 150px !important;
+    }
+
+    input#volumeControl {
+        width: auto !important;
+    }
+}
